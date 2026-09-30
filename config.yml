@@ -76,7 +76,7 @@ viz_color: "128,0,128"                     # RGB color used for anomaly overlays
 # =========================
 # Inference (detect)
 # =========================
-img_path: "D:\\DATA\\VisA_pytorch\\candle\\train\\good"         # Input image or directory for detection
+img_path: "D:\\DATA\\candle\\train\\good"         # Input image or directory for detection
 thresh: null                               # Generic legacy threshold fallback
 thresh_padim: 13.0                         # Fixed PaDiM anomaly threshold
 thresh_patchcore: 0.25                     # Fixed PatchCore anomaly threshold

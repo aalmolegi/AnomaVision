@@ -1,8 +1,8 @@
 # =========================
 # Dataset / preprocessing (shared by train, detect, eval, stream)
 # =========================
-dataset_path: "D:/01-DATA/mvtec"                 # Root dataset directory (contains train/test folders)
-class_name: "cable"                       # Dataset class to train/evaluate
+dataset_path: "D:/DATA"                 # Root dataset directory (contains train/test folders)
+class_name: "bottle"                       # Dataset class to train/evaluate
 resize: [224, 224]                         # Input image size [width, height]
 crop_size:                                 # Optional center crop size [width, height]
 normalize: true                            # Apply ImageNet normalization
@@ -77,7 +77,7 @@ viz_color: "128,0,128"                     # RGB color used for anomaly overlays
 # =========================
 # Inference (detect)
 # =========================
-img_path: "D:\\01-DATA\\VisA_pytorch\\candle\\train\\good"         # Input image or directory for detection
+img_path: "D:\\DATA\\VisA_pytorch\\candle\\train\\good"         # Input image or directory for detection
 thresh: null                               # Generic legacy threshold fallback
 thresh_padim: 13.0                         # Fixed PaDiM anomaly threshold
 thresh_patchcore: 0.25                     # Fixed PatchCore anomaly threshold

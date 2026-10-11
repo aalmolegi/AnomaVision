@@ -91,18 +91,6 @@ MVTec_CLASSES = [
     "transistor",
     "wood",
     "zipper",
-    "candle",
-    "capsules",
-    "cashew",
-    "chewinggum",
-    "fryum",
-    "macaroni1",
-    "macaroni2",
-    "pcb1",
-    "pcb2",
-    "pcb3",
-    "pcb4",
-    "pipe_fryum",
 ]
 ALGORITHMS = ("padim", "patchcore", "efficientad")
 
@@ -396,14 +384,7 @@ class BenchmarkRunner:
     #     return datamodule
 
     def _build_anomalib_datamodule(self, algorithm: str):
-        from anomalib.data import MVTecAD, Visa
-
-        dataset_name = self.dataset_path.name.lower()
-
-        if "visa" in dataset_name:
-            datamodule_cls = Visa
-        else:
-            datamodule_cls = MVTecAD
+        from anomalib.data import MVTecAD
 
         kwargs = {
             "root": str(self.dataset_path),
